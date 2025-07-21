@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+</head>
+<style>
+    .emoji{
+        text-align:center;
+    }
+    h1{
+        color:blue;
+        text-align:center;
+        font-family:Arial, Helvetica, sans-serif
+    }
+    h2{
+        text-align:center;
+        font-weight:normal;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .subheading{
+        font-weight:bold;
+    }
+    ul{
+        
+        padding:0;
+    }
+    li{
+        font-weight:bold;
+        font-family:Arial, Helvetica, sans-serif;
+        list-style:none;
+        text-align:center; 
+        padding:15px 0px; 
+        max-width:600px;
+        margin:0 auto;
+        border-radius: 10px;
+        transition:all 200ms ease-in-out;    
+    }
+   
+     li div{
+        font-weight: normal;;
+     }   
+    
+    li:hover{
+        background-color:#FFFBEF;
+        
+    }
+    button{
+        display:block;
+        margin:0 auto;
+        padding:20px 25px;
+        border:none;
+        border-radius:30px;
+        color:white;
+        background-color:#1A64D6;
+        box-shadow: #bacce9 0px 0px 4px;
+        transition:all 200ms ease-in-out;
+    }
+button:hover{
+    background-color:white;
+    color:#1A64D6;
+    border:1px solid #1A64D6;
+    cursor:pointer;
+}
+.me{
+    text-align:center;
+    color:#828385;
+    margin:20px;
+}
+</style>
+<body>
+    <div class="emoji">⛅</div>
+    <h1>Currently 21°C in Tokyo</h1>
+    <h2>13°C / <span class="subheading">23°C</span></h2>
+    <ul>
+        <li>🌧️Tomorrow 
+            <div> 10° / <strong>22°</strong>
+            </div> </li>
+            <li>☁️ Saturday
+                <div> 15° / <strong>17°</strong>
+            </div></li>
+            <li>☀️ Sunday
+                <div> 25° / <strong>28°</strong></div> </li>
+    </ul>
+    <button>Change city</button>
+    <div class="me">Coded by Betelhem Wondale</div>
+</body>
+</html>
