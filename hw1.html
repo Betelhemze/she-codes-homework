@@ -85,5 +85,27 @@ button:hover{
     </ul>
     <button>Change city</button>
     <div class="me">Coded by Betelhem Wondale</div>
+    <script>
+         function changeCity(){
+            let city = prompt("Enter your city name:");
+            let temp = prompt("enter the tempertature of your city:");
+              
+            let emoji = document.querySelector(".emoji");
+            let h1 = document.querySelector("h1");
+
+            if (temp >= 0){
+                  emoji.innerHTML = "😊";
+                  h1.innerHTML = `Currently ${temp}°C in ${city}`;
+            }
+            else {
+                emoji.innerHTML = "😢";
+                h1.innerHTML = `Currently ${temp}°C in ${city}`;
+            }
+         }
+        
+         let button =document.querySelector("button");
+         button.addEventListener("click", changeCity);
+
+    </script>
 </body>
 </html>
